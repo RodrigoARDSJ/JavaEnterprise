@@ -7,7 +7,7 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 #Intellij folder
-/.idea/
-/JavaEnterprise.iml/
+.idea/
+JavaEnterprise.iml/
 #Eclise
-/.metadata/
+.metadata/
