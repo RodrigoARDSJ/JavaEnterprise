@@ -5,7 +5,7 @@ import br.com.fiap.nano.entity.Produto;
 
 import javax.persistence.EntityManager;
 
-public class ProdutoDaoImpl extends GenericDaoImpl<Produto, Long> implements ProdutoDao {
+public class ProdutoDaoImpl extends GenericDaoImpl<Produto, Integer> implements ProdutoDao {
     public ProdutoDaoImpl(EntityManager em) {
         super(em);
     }

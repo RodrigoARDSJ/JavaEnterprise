@@ -13,7 +13,7 @@ public class Fornecedor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cd_fornecedor", nullable = false)
-    private Long id;
+    private int id;
 
     @Column(name = "nm_fornecedor", nullable = false, length = 50)
     private String nome;
@@ -30,24 +30,20 @@ public class Fornecedor {
 
     }
 
-    public Fornecedor(Long id, String nome, Calendar dataCadastro, Calendar dataModificacao) {
+    public Fornecedor(int id, String nome) {
         this.id = id;
         this.nome = nome;
-        this.dataCadastro = dataCadastro;
-        this.dataModificacao = dataModificacao;
     }
 
-    public Fornecedor(String nome, Calendar dataCadastro, Calendar dataModificacao) {
+    public Fornecedor(String nome) {
         this.nome = nome;
-        this.dataCadastro = dataCadastro;
-        this.dataModificacao = dataModificacao;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
